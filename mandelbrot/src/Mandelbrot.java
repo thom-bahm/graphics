@@ -49,7 +49,7 @@ public class Mandelbrot {
 	}
 	
 	public static void mandelbrotColor () throws Exception{
-        int width = 1920*30, height = 1080*30, max = 1000;
+        int width = 1920*8, height = 1080*8, max = 1000;
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         int black = 0x000000, white = 0xFFFFFF;
         int[] colors = new int[max];
@@ -79,7 +79,7 @@ public class Mandelbrot {
             }
         }
 
-        ImageIO.write(image, "png", new File("../mandelbrotColored_80k_1k_.png"));
+        ImageIO.write(image, "png", new File("../mandelbrotColored_16k_1k_.png"));
 	}
 
     
